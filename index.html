@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Assignment</title>
+</head>
+<body class="flex items-center justify-center min-h-screen w-full">
+    <div id="assignment" class="container mx-auto p-2 m-10 md:mb-20 mt-0" >
+        <h2 class=" text-center text-4xl text-white font-bold mb-20">OUR SERVICES</h2>
+        <div class="flex justify-around space-x-4 p-6">
+        <!--Service 1-->
+        <div class="service-bx  bg-white shadow-lg rounded-lg p-6 text-center w-1/4 relative">
+            <div class="icon mb-1 flex items-center justify-center shadow-lg rounded-full bg-white border-2 border-blue-900 size-20 mx-auto transform -translate-y-16">
+                <img src="assest/Plumbing-services .png" class="w-12 h-12">
+            </div>
+            <h3  class="font-semibold text-lg -mt-9 mb-2">Emergency Plumbing Services</h3>
+            <p class="text-grey-500 mb-2">Our plumbers are ready to go 24/7 for emergencies - including nights, weekends, and holidays.</p>
+            <a href="#" class=" text-blue-900 font-bold">Explore This Service &gt;</a>
+        </div>
+        <!--Service 2-->
+        <div class="service-bx bg-white shadow-lg rounded-lg p-6 text-center w-1/4">
+            <div class="icon mb-4 flex items-center justify-center shadow-lg rounded-full bg-white border-2 border-blue-900 size-20 mx-auto transform -translate-y-16">
+                <img src="assest/Plumbing_drain.png" class="w-12 h-12">
+            </div>
+            <h3 class="font-semibold text-lg  -mt-11 mb-2">Plumbing and Drains</h3>
+            <p class="text-grey-500 mb-2">As the largest plumbing and drain service company, we make thousands of repairs every day.</p>
+            <a href="#" class=" text-blue-900 font-bold">Explore This Service &gt;</a>
+        </div>
+        <!--Service 3-->
+        <div class="service-bx bg-white shadow-lg rounded-lg p-6 text-center w-1/4">
+            <div class="icon mb-4 flex items-center justify-center shadow-lg rounded-full bg-white border-2 border-blue-900 size-20 mx-auto transform -translate-y-16">
+                <img src="assest/water.png" class="w-12 h-12">
+            </div>
+            <h3 class="font-semibold text-lg -mt-11 mb-2">Water Damage</h3>
+            <p class="text-grey-500 mb-2">Our teams are equipped with state-of-the-art water extraction and cleanup equipment.</p>
+            <a href="#"  class=" text-blue-900 font-bold">Explore This Service &gt;</a>
+        </div>
+        <!--Service 4-->
+        <div class="service-bx bg-white shadow-lg rounded-lg p-6 text-center w-1/4">
+            <div class="icon mb-4 flex items-center justify-center shadow-lg rounded-full bg-white border-2 border-blue-900 size-20 mx-auto transform -translate-y-16">
+                <img src="assest/water-heater.png" class="w-12 h-12">
+            </div>
+            <h3 class="font-semibold text-lg -mt-11 mb-2">Water Heaters</h3>
+            <p class="text-grey-500 mb-2">Trust us for repair and replacement of gas, electric, and tankless water heaters.</p>
+            <a href="#"  class=" text-blue-900 font-bold">Explore This Service &gt;</a>
+        </div>
+        </div>
+    </div>
+    <script>
+        // Wait for the DOM to load before running the animation
+        document.addEventListener("DOMContentLoaded", function() {
+            anime({
+                targets: '.service-bx',
+                opacity: [0, 1],
+                translateY: [-20, 0],
+                duration: 800,
+                delay: anime.stagger(200) // Stagger the animation for each box
+            });
+        });
+    </script>
+</body>
+</html>
